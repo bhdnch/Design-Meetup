@@ -1,0 +1,35 @@
+// Normalize
+@import "./normalize";
+
+// Fonts
+@import "./fonts";
+
+// Cascading Styles
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// Mixin
+
+@mixin primary-button {
+    border: 1px solid #d6377f;
+    padding: 9px 19px;
+    border-radius: 5px;
+    background: #d6377f;
+    color: #fff;
+    font-family: "Satoshi";
+    font-size: 16px;
+    font-weight: 500 !important;
+    letter-spacing: 0.16px;
+    text-decoration: none;
+    &:hover {
+        background: transparent;
+        border: 1px solid #fff;
+    }
+    transition: all 0.2s ease;
+    i {
+        margin-right: 12px;
+    }
+}
